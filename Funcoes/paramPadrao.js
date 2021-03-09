@@ -6,4 +6,4 @@ function soma1() {
   return a + b + c;
 }
 
-console.log(soma(), soma(3), soma(1, 2, 3));
+console.log(soma(), soma(3), soma(1, 2, 3), soma(1, 2, 3, 4));
