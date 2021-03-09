@@ -15,4 +15,4 @@ console.log(soma("a", "b", "c"));
 
 //apresentando in arguments, um array interno que toda funcao tem disponivel
 // com a possibilidade de obter todos os parametros passados a partir
-// da chamada da funcao.
+// da chamada da funcao, hoje subistituido por REST SPREED
