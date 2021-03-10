@@ -3,7 +3,7 @@ const soma = function (x, y) {
 };
 
 const imprimiResultado = function (a, b, operacao = soma) {
-  console.log(operacao(3, 4));
+  console.log(operacao(a, b));
 };
 
 imprimiResultado(3, 4, function (x, y) {
