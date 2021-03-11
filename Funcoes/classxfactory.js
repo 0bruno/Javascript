@@ -1,3 +1,4 @@
+//classe
 class Pessoa {
   constructor(nome) {
     this.nome = nome;
@@ -11,6 +12,7 @@ class Pessoa {
 const p1 = new Pessoa("João");
 p1.falar();
 
+//factory
 const criarPessoa = (nome) => {
   return {
     falar: () => {
