@@ -10,3 +10,7 @@ const produto = {
 };
 console.log(getPreco());
 console.log(produto.getPreco());
+
+const carro = { preco: 45900, desc: 0.2 };
+console.log(getPreco.call(carro));
+console.log(getPreco.apply(carro));
