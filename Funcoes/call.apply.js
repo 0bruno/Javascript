@@ -14,3 +14,9 @@ console.log(produto.getPreco());
 const carro = { preco: 45900, desc: 0.2 };
 console.log(getPreco.call(carro));
 console.log(getPreco.apply(carro));
+
+//com call passo os parametros diretamente
+console.log(getPreco.call(carro, 0.17, "$"));
+
+//com apply passo os parametros em um array
+console.log(getPreco.apply(carro, [0.14, "$"]));
