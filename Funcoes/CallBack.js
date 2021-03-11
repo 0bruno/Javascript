@@ -29,7 +29,6 @@ const notasBaixas2 = notas.filter(function (nota) {
 });
 console.log(notasBaixas2);
 
-const notasBaixas3 = notas.filter((nota) => {
-  return nota < 7;
-});
+const notasMenores = (nota) => nota < 7;
+const notasBaixas3 = notas.filter(notasMenores);
 console.log(notasBaixas3);
