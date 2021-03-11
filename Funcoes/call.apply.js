@@ -9,3 +9,4 @@ const produto = {
   getPreco,
 };
 console.log(getPreco());
+console.log(produto.getPreco());
