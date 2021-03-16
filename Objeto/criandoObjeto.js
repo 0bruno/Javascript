@@ -18,3 +18,18 @@ const p1 = new Produto("Caneta", 7.99, 0.15);
 const p2 = new Produto("Celular, 1850", 0.1);
 
 console.log(p1.getPrecoDesconto());
+
+//Funcao factory
+function criarFuncionario(nome, salario, faltas) {
+  return {
+    nome,
+    salario,
+    faltas,
+    getSalario() {
+      return (salario / 30) * (30 - faltas);
+    },
+  };
+}
+
+const f1 = criarFuncionario("Bruno", 7800, 0);
+console.log(f1.getSalario());
