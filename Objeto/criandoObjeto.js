@@ -16,3 +16,5 @@ function Produto(nome, preco, desc) {
 
 const p1 = new Produto("Caneta", 7.99, 0.15);
 const p2 = new Produto("Celular, 1850", 0.1);
+
+console.log(p1.getPrecoDesconto());
