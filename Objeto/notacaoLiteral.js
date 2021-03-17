@@ -14,3 +14,12 @@ const valorAttr = 7.89;
 const obj3 = {};
 obj3[nomeAttr] = valorAttr;
 const obj4 = { [nomeAttr]: valorAttr };
+
+const obj5 = {
+  function1: function () {
+    //.........
+  },
+  function2() {
+    //.......
+  },
+};
