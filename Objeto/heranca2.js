@@ -16,3 +16,10 @@ console.log(filha2.nome, filha2.corCabelo);
 
 console.log(Object.keys(filha1));
 console.log(Object.keys(filha2));
+
+//verificando se apropriedade pertence ou nao ao objeto
+for (let key in filha2) {
+  filha2.hasOwnProperty(key)
+    ? console.log(key)
+    : console.log(`Por herança ${key}`);
+}
