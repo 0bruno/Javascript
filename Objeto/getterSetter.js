@@ -1,5 +1,5 @@
 const sequencia = {
-    _valor = 1, //convenção
+    _valor = 1, //convenção de atributos ditos privados
     get valor() {
         return this._valor++
     },
