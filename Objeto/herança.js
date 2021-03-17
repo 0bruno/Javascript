@@ -23,13 +23,20 @@ const carro = {
 };
 
 const ferrari = {
+  //__proto__: carro,
   modelo: "F40",
   velMax: 324,
 };
 
 const volvo = {
+  //__proto__: carro,
   modelo: "V40",
   status() {
     return `${this.modelo}: ${super.status()}`;
   },
 };
+
+//definindo relacao objeto /prototipo
+//carro e prototipo de ferrari
+Object.setPrototypeOf(ferrari, carro);
+Object.setPrototypeOf(volvo, carro);
