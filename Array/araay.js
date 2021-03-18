@@ -8,3 +8,8 @@ pilotos.shift(); //remove o primeiro
 console.log(pilotos);
 
 pilotos.unshift("Hamilton"); //adiciona como primeiro elemento
+
+//splice
+pilotos.splice(2, 0, "Botas", "Massa"); // adicionando a aprtir do indice dois
+
+pilotos.splice(2, 1); // a partir do indice 2 demover um
