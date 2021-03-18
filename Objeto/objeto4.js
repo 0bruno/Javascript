@@ -3,7 +3,7 @@ function aula(nome, videoID) {
   this.videoID = videoID;
 }
 
-const aula1 = new aula("Brm vindo", 123);
+const aula1 = new aula("Bem vindo", 123);
 
 //simulando o new
 function novo(f, ...paramns) {
