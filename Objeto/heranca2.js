@@ -1,5 +1,6 @@
 const pai = { nome: "Pedro", corCabelo: "Preto" };
 
+//define o objeto pai como protopido do filho
 const filha1 = Object.create(pai);
 filha1.nome = "Rúbia";
 console.log(filha1.corCabelo);
