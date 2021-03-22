@@ -5,6 +5,7 @@ Array.prototype.filter2 = function (callback) {
       newArray.push(this[i]);
     }
   }
+  return newArray;
 };
 
 const produtos = [
