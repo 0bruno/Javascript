@@ -6,9 +6,10 @@ module.exports = {
     return "Boa Noite";
   },
 };
-
+/*
 //ES6
 export const bomdia = "Bom dia";
 export function boaNoite() {
   return "Boa Noite";
 }
+*/
