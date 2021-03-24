@@ -9,7 +9,7 @@ aprovados.forEach(function (nome, indice) {
 aprovados.forEach((nome) => {
   console.log(nome);
 });
-
+//criando funcao
 const exibirAprovados = (aprovado) => {
   console.log(aprovado);
 };
