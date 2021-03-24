@@ -4,7 +4,7 @@ const nums = [1, 2, 3, 4, 5];
 let resultado = nums.map(function (e) {
   return e * 2;
 });
-
+//criando funcao
 const soma10 = (e) => {
   return e + 10;
 };
