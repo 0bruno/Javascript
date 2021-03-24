@@ -14,7 +14,7 @@ const produtos = [
   { nome: "Copo de vidro", preco: 12.49, fragil: true },
   { nome: "Copo de Plastico", preco: 18.99, fragil: false },
 ];
-
+//criando funcao
 const caro = (produto) => {
   return produto.preco >= 2499;
 };
