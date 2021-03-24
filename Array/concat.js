@@ -1,6 +1,7 @@
 const filhas = ["Rubia", "Cintia"];
 const filhos = ["Bruno", "Bruno II"];
 
+//exemplo concat
 const todos = filhos.concat(filhas);
 console.log(todos, filhas, filhos);
 
