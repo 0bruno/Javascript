@@ -8,7 +8,7 @@ let resultado = nums.map(function (e) {
 const soma10 = (e) => {
   return e + 10;
 };
-
+//criando funcao
 const triplo = (e) => e * 3;
 
 const paraDinheiro = (e) => `R$${parseFloat(e).toFixed(2).replace(".", ",")}`;
