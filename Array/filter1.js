@@ -10,6 +10,7 @@ const caro = (produto) => {
   return produto.preco >= 2499;
 };
 
+//criando funcao fragil
 const fragil = (produto) => produto.fragil;
 
 console.log(produtos.filter(caro).filter(fragil));
