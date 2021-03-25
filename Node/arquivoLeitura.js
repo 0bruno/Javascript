@@ -14,7 +14,7 @@ fs.readFile(caminho, "utf-8", (err, conteudo) => {
   console.log(`${config.db.host}: ${config.db.port}`);
 });
 
-//lendo arquievo json de forma simples
+//lendo arquivo json de forma simples
 const config = require("./arquivo.json");
 //ja retorna um objeto sem precisar do json.parse
 console.log(config.db);
