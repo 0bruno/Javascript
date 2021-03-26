@@ -8,7 +8,7 @@ const axios = require("axios");
 const chinesas = (funcionarios) => funcionarios.pais === "China";
 const mulheres = (funcionarios) => funcionarios.genero === "F";
 const menorSalario = (func, funcAtual) => {
-  return func.salario < funcAtual.salario ? func : funcAtual;
+  return func.salario > funcAtual.salario ? func : funcAtual;
 };
 
 axios.get(url).then((response) => {
