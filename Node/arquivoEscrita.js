@@ -17,5 +17,6 @@ fs.writeFile(
 );
 
 //lendo arquivo direto no require, tem que passar extensao.json
+//o convertendo para objeto automaticamente
 const leitura = require('./arquivo.json');
 console.log(leitura);
