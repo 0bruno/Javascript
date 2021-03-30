@@ -20,10 +20,12 @@ app.post('/produtos', (req, res, next) => {
   //passando objeto para ser salvo
   const produto = bancoDeDados.salvarProduto({
     //pegando a aprtir do corpo da requisicao
+    //forma para pegar no servidor as requisicoes vindas
     nome: req.body.name,
     preco: req.body.preco,
   });
 });
+
 app.listen(porta, () => {
   console.log(`Servidor está  executando na porta ${porta}`);
 });
