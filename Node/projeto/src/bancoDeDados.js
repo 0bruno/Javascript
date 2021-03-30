@@ -12,7 +12,18 @@ const produtos = {};
 function salvarProduto(produto) {
   //se o id nao estiver setado
   if (!produto.id) produto = sequence.id;
+
+  //chave id, valor e o  produto
   produtos[produto.id] = produto;
   //produto retornado ja possui id
   return produto;
+}
+
+function getProduto(id) {
+  return produtos[id] || {};
+}
+
+function getProdutos() {
+  //retornado apenas valores
+  return Object.values(produtos);
 }
