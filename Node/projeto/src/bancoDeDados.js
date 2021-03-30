@@ -27,3 +27,6 @@ function getProdutos() {
   //retornado apenas valores
   return Object.values(produtos);
 }
+
+//exportando para fora do modulo
+module.exports = { salvarProduto, getProduto, getProdutos };
