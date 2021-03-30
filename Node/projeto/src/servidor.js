@@ -6,7 +6,8 @@ const app = express();
 const bancoDeDados = require('./bancoDeDados');
 
 app.get('/produtos', (req, res, next) => {
-  res.send({ nome: 'Notebook', preco: 123.45 }); //conveter para json send converte automatico
+  // res.send({ nome: 'Notebook', preco: 123.45 }); //conveter para json send converte automatico
+  res.send(bancoDeDados.getProduto);
 });
 
 app.listen(porta, () => {
