@@ -15,6 +15,15 @@ app.get('/produtos/:id', (req, res, next) => {
   res.send(bancoDeDados.getProduto(req.params.id));
 });
 
+//submeter os dados e salvar um novo produto salvando
+app.post('/produtos', (req, res, next) => {
+  //passando objeto para ser salvo
+  const produto = bancoDeDados.salvarProduto({
+    //pegando a aprtir do corpo da requisicao
+    nome: req.body.name,
+    preco: req.body.preco,
+  });
+});
 app.listen(porta, () => {
   console.log(`Servidor está  executando na porta ${porta}`);
 });
