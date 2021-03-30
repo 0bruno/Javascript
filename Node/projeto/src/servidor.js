@@ -24,6 +24,7 @@ app.post('/produtos', (req, res, next) => {
     nome: req.body.name,
     preco: req.body.preco,
   });
+  res.send(produto);
 });
 
 app.listen(porta, () => {
