@@ -15,3 +15,14 @@ const obj2 = {
   },
 };
 console.log(obj2.ola());
+
+//class uma classe internamente sera convertida para uma função
+class Animal {}
+class cachorro extends Animal {
+  falar() {
+    return 'AU AU';
+  }
+}
+
+//criando objeto a partir de uma classe usa new
+console.log(new cachorro().falar());
