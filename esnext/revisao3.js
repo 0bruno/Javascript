@@ -5,3 +5,13 @@ console.log(Object.values(obj));
 
 //retorna um array de array com chave valor
 console.log(Object.entries(obj));
+
+//melorias na notacao literal
+const nome = 'Bruno';
+const obj2 = {
+  nome,
+  ola() {
+    return 'Oi';
+  },
+};
+console.log(obj2.ola());
