@@ -11,7 +11,7 @@ const produtos = {};
 
 function salvarProduto(produto) {
   //se o id nao estiver setado
-  if (!produto.id) produto = sequence.id;
+  if (!produto.id) produto.id = sequence.id;
 
   //chave id, valor e o  produto
   produtos[produto.id] = produto;
