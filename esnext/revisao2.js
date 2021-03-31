@@ -7,3 +7,11 @@ const lexico1 = () => console.log(this === exports);
 const lexico2 = lexico1.bind({});
 lexico1();
 lexico2();
+
+//parametros default
+function log(texto = 'node') {
+  console.log(texto);
+}
+
+log();
+log('Eu sobrescrevo');
