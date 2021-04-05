@@ -13,3 +13,5 @@ const nomes = ['Raquel', 'Bruno', 'Cintia', 'Lucas'];
 
 const nomesSet = new Set(nomes);
 console.log(nomesSet);
+nomesSet.delete('Lucas');
+console.log(nomesSet);
