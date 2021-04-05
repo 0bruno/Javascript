@@ -6,3 +6,8 @@ const assuntoEcma = ['map', 'set', 'promises'];
 for (let i of assuntoEcma) {
   console.log(i);
 }
+
+//for in percorre em cima de indices
+for (let i in assuntoEcma) {
+  console.log(i);
+}
