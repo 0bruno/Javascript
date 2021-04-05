@@ -8,6 +8,7 @@ const getTurma = (letra) => {
     http.get(url, (res) => {
       let resultado = '';
       res.on('data', (dados) => {
+        //dados vao ser concatenados todos em resultado
         resultado += dados;
       });
       res.on('end', () => {
