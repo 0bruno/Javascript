@@ -32,3 +32,8 @@ for (let chave of assuntosMap.keys()) {
 for (let valores of assuntosMap.values()) {
   console.log(valores);
 }
+
+//pegando as entradas com entries para acessar separadas caso queira
+for (let [chave, valor] of assuntosMap.entries()) {
+  console.log(`Chave  => ${chave} Valor ${valor.abordado}`);
+}
