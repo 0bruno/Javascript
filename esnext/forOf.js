@@ -11,3 +11,14 @@ for (let i of assuntoEcma) {
 for (let i in assuntoEcma) {
   console.log(i);
 }
+
+const assuntosMap = new Map([
+  ['Map', { abordado: true }],
+  ['Set', { abordado: true }],
+  ['Promise', { abordado: false }],
+]);
+
+//for in em cima de um map
+for (let i of assuntosMap) {
+  console.log(i);
+}
