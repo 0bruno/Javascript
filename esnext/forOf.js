@@ -18,7 +18,12 @@ const assuntosMap = new Map([
   ['Promise', { abordado: false }],
 ]);
 
-//for in em cima de um map
+//for in em cima de um map percorrendo chave valor
 for (let i of assuntosMap) {
+  console.log(i);
+}
+
+//pegando somente a chave com for i
+for (let i of assuntosMap.keys) {
   console.log(i);
 }
