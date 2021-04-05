@@ -41,3 +41,7 @@ getTurma('A').then((alunos) => {
     });
   });
 });
+
+//posso passar varias promisses pra ela
+//quando todas as promisses forem resolvidas ela chama o then
+Promise.all([getTurma('A'), getTurma('b'), getTurma('c')]);
