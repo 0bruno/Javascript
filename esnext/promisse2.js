@@ -26,6 +26,7 @@ let nomes = [];
 //Then espera a requisicao acabar e depois (then)
 //que ela acabar realiza as operações que estao aqui nesse bloco
 
+//o then va iesperar a requisicao a terminar toda para pode manipular os dados vindos de A
 getTurma('A').then((alunos) => {
   nomes = nomes.concat(alunos.map((a) => `A: ${a.nome}`));
   getTurma('A').then((alunos) => {
