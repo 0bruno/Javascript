@@ -16,6 +16,7 @@ const getTurma = (letra) => {
           //resolve a promisse
           resolve(JSON.parse(resultado));
         } catch (e) {
+          //caso nao for resolvida vai ser executado esse codigo
           reject(e);
         }
       });
