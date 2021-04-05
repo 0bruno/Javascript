@@ -37,3 +37,8 @@ for (let valores of assuntosMap.values()) {
 for (let [chave, valor] of assuntosMap.entries()) {
   console.log(`Chave  => ${chave} Valor ${valor.abordado}`);
 }
+
+const s = new Set(['a', 'b', 'c']);
+for (let letra of s) {
+  console.log(letra);
+}
