@@ -11,3 +11,14 @@ falarDepois(3, 'Estou falando')
     console.log(frase);
   })
   .catch((e) => console.log('Erro'));
+
+//criando depois executando primeiro
+function teste(teste) {
+  return new Promise((resolve) => {
+    resolve(teste);
+  });
+}
+
+teste('oi Bruno').then((teste) => {
+  console.log(teste.replace('oi', 'OI'));
+});
