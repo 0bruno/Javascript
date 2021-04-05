@@ -23,7 +23,7 @@ for (let i of assuntosMap) {
   console.log(i);
 }
 
-//pegando somente a chave com for i
-for (let i of assuntosMap.keys) {
-  console.log(i);
+//pegando somente a chave com for in
+for (let chave of assuntosMap.keys()) {
+  console.log(chave);
 }
