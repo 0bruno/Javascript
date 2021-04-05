@@ -38,6 +38,8 @@ for (let [chave, valor] of assuntosMap.entries()) {
   console.log(`Chave  => ${chave} Valor ${valor.abordado}`);
 }
 
+//O objeto Set permite que você armazene valores únicos de qualquer tipo,
+// desde valores primitivos a referências a objetos.
 const s = new Set(['a', 'b', 'c']);
 for (let letra of s) {
   console.log(letra);
