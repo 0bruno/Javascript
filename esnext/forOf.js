@@ -27,3 +27,8 @@ for (let i of assuntosMap) {
 for (let chave of assuntosMap.keys()) {
   console.log(chave);
 }
+
+//pegando somente os valores
+for (let valores of assuntosMap.values()) {
+  console.log(valores);
+}
