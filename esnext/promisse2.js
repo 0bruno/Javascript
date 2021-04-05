@@ -23,6 +23,9 @@ const getTurma = (letra) => {
 
 let nomes = [];
 
+//Then espera a requisicao acabar e depois (then)
+//que ela acabar realiza as operações que estao aqui nesse bloco
+
 getTurma('A').then((alunos) => {
   nomes = nomes.concat(alunos.map((a) => `A: ${a.nome}`));
   getTurma('A').then((alunos) => {
