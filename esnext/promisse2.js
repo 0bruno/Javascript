@@ -44,6 +44,13 @@ getTurma('A').then((alunos) => {
 
 //posso passar varias promisses pra ela
 //quando todas as promisses forem resolvidas ela chama o then
-Promise.all([getTurma('A'), getTurma('b'), getTurma('c')]);
+Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
 
-//apos as promisses for resolvidas comeca a chamar a cadeia de Then()
+  //o then va iesperar a requisicao a terminar toda para pode manipular os dados vindos de getTurma()
+  //apos as promisses for resolvidas comeca a chamar a cadeia de Then()
+  //fazer um spread da matriz
+  .then((turmas) => [].concat(...turmas))
+  .then((alunos) => alunos.map((aluno) => aluno.nome))
+  .then((nomes) => console.log(nomes))
+  //catch vai tratar qualquer eventual problema que aconteca durante a execução
+  .catch((e) => console.log(e.message));
