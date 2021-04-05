@@ -13,6 +13,7 @@ const getTurma = (letra) => {
       });
       res.on('end', () => {
         try {
+          //resolve a promisse
           resolve(JSON.parse(resultado));
         } catch (e) {
           reject(e);
