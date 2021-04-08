@@ -31,4 +31,9 @@ let obterAlunos = async () => {
   const turmaB = await getTurma('B');
   const turmaC = await getTurma('C');
   return [].concat(turmaA, turmaB, turmaC);
-};
+}; // retorna um objeto AsyncFunction
+
+//em cima disso eu chamo  o .then()
+obterAlunos()
+  .then((alunos) => alunos.map((a) => a.nome))
+  .then((nomes) => console.log(nomes));
