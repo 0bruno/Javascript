@@ -1,0 +1,25 @@
+//com promisse
+const http = require('http');
+
+const getTurma = (letra) => {
+  const url = `http://files.cod3r.com.br/curso-js/turma${letra}.json`;
+
+  return new Promise((resolve, reject) => {
+    http.get(url, (res) => {
+      let resultado = '';
+      res.on('data', (dados) => {
+        //dados vao ser concatenados todos em resultado
+        resultado += dados;
+      });
+      res.on('end', () => {
+        try {
+          //resolve a promisse
+          resolve(JSON.parse(resultado));
+        } catch (e) {
+          //caso nao for resolvida vai ser executado esse codigo
+          reject(e);
+        }
+      });
+    });
+  });
+};
