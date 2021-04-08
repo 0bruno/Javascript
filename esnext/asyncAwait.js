@@ -23,3 +23,5 @@ const getTurma = (letra) => {
     });
   });
 };
+
+//Objetivo simplificar promisse
