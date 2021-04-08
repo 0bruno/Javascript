@@ -37,3 +37,4 @@ let obterAlunos = async () => {
 obterAlunos()
   .then((alunos) => alunos.map((a) => a.nome))
   .then((nomes) => console.log(nomes));
+//then so executa apos o await
