@@ -25,6 +25,7 @@ const getTurma = (letra) => {
 };
 
 //Objetivo simplificar promisse
+//revendo promisse
 
 let obterAlunos = async () => {
   const turmaA = await getTurma('A');
