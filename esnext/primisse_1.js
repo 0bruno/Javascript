@@ -3,8 +3,23 @@ let p = new Promise(function (cumprirPromessa) {
   cumprirPromessa(['Ana', 'Bia', 'Caio']);
 });
 
-p.then((valor) => valor[0])
-  .then((primeiro) => primeiro[0])
-  .then((letra) => letra.toLowerCase())
-  .then((mostrar) => console.log(mostrar));
+//acrescentando paradigma funcional
+
+function primeiroElemento(array) {
+  return array[0];
+}
+
+function primeiraLetra(string) {
+  return string[0];
+}
+
+function letraMinuscula(letra) {
+  return letra.toLowerCase();
+}
+
+p.then(primeiroElemento)
+  .then(primeiraLetra)
+  .then(letraMinuscula)
+  //then recebe  um unico parametro posso passar o console direto
+  .then(console.log);
 //resultado do metodo Then() e passado pro proximo metodo e assim opr diante
