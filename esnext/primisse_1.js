@@ -1,25 +1,20 @@
 //acrescentando paradigma funcional
 
-function primeiroElemento(array) {
-  return array[0];
-}
+const primeiroElemento = (string) => string[0];
 
-function primeiraLetra(string) {
-  return string[0];
-}
+const primeiraLetra = (string) => string[0];
 
-function letraMinuscula(letra) {
-  return letra.toLowerCase();
-}
+const letraMinuscula = (letra) => letra.toLowerCase();
 
 //promisse algo que vai resolver no futuro
-new Promise(function (cumprirPromessa) {
-  cumprirPromessa(['Ana', 'Bia', 'Caio']);
+new Promise(function (resolve) {
+  resolve(['Ana', 'Bia', 'Caio']);
 })
 
   .then(primeiroElemento)
   .then(primeiraLetra)
   .then(letraMinuscula)
+  //.then(v => console.log(v))
   .then(console.log);
 //then recebe  um unico parametro posso passar o console direto
 //resultado do metodo Then() e passado pro proximo metodo e assim opr diante
