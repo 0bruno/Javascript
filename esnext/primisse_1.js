@@ -13,7 +13,7 @@ function letraMinuscula(letra) {
 }
 
 //promisse algo que vai resolver no futuro
-let p = new Promise(function (cumprirPromessa) {
+new Promise(function (cumprirPromessa) {
   cumprirPromessa(['Ana', 'Bia', 'Caio']);
 })
 
