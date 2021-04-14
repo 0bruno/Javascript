@@ -7,6 +7,9 @@ function esperaPor(tempo = 2000) {
   });
 }
 
-esperaPor(5000).then((texto) => {
-  console.log(texto[0]);
-});
+esperaPor(5000)
+  .then(() => {
+    esperaPor();
+  })
+  .then(esperaPor)
+  .then(esperaPor);
