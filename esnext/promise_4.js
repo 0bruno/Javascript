@@ -1,12 +1,26 @@
-function geraNumeroEntr(min, max, tempo) {
+function geraNumerosEntre(min, max, tempo) {
   if (min > max) {
     [max, min] = [min, max];
   }
   return new Promise((resolve) => {
     setTimeout(function () {
       const fator = max - min + 1;
-      const aleatorio = parseInt(Math.random() * fato) + 1;
+      const aleatorio = parseInt(Math.random() * fator) + 1;
       resolve(aleatorio);
     }, tempo);
   });
 }
+
+//gerando 1 x
+geraNumerosEntre(1, 10, 3000).then(console.log);
+
+/*function gerarVarios() {
+  return Promise.all([
+    geraNumerosEntre(1, 10, 4000),
+    geraNumerosEntre(1, 10, 400),
+    geraNumerosEntre(1, 10, 5000),
+    geraNumerosEntre(1, 10, 6000),
+  ]);
+}
+
+gerarVarios().then(console.log);*/
