@@ -14,7 +14,7 @@ function geraNumerosEntre(min, max, tempo) {
 //gerando 1 x
 geraNumerosEntre(1, 10, 3000).then(console.log);
 
-/*function gerarVarios() {
+function gerarVarios() {
   return Promise.all([
     geraNumerosEntre(1, 10, 4000),
     geraNumerosEntre(1, 10, 400),
@@ -23,4 +23,4 @@ geraNumerosEntre(1, 10, 3000).then(console.log);
   ]);
 }
 
-gerarVarios().then(console.log);*/
+gerarVarios().then(console.log);
