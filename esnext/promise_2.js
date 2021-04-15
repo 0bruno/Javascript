@@ -6,6 +6,7 @@ function esperaPor(tempo = 2000) {
     }, tempo);
   });
 }
+//chamando then
 
 esperaPor(5000)
   .then(() => {
