@@ -9,7 +9,6 @@ function esperaPor(tempo = 2000) {
   });
 }
 //chamando then
-
 esperaPor(5000)
   .then(() => {
     esperaPor();
