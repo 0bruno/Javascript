@@ -17,6 +17,7 @@ geraNumerosEntre(1, 10, 3000).then(console.log);
 //gerando varioas vezes com promisse all
 function gerarVarios() {
   return Promise.all([
+    //promise all executa todas as promisse para  so depois chamar o then()
     geraNumerosEntre(1, 10, 4000),
     geraNumerosEntre(1, 10, 400),
     geraNumerosEntre(1, 10, 5000),
