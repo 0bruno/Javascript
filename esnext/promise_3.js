@@ -9,3 +9,8 @@ function geraNumerosEntre(min, max) {
     resolve(aleatorio);
   });
 }
+
+geraNumerosEntre(1, 10)
+  .then((num) => num * 10)
+  .then((num) => `O numero gerado foi ${num}`)
+  .then(console.log);
