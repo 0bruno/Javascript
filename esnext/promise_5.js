@@ -8,4 +8,7 @@ function funcionarouNao(valor, chanceErro) {
   });
 }
 
-funcionarouNao('Testando', 0.5).then(console.log);
+funcionarouNao('Testando', 0.5)
+  .then((v) => console.log(v))
+  //sempre por catch no fim
+  .catch((err) => console.log(`Erro: ${err}`));
