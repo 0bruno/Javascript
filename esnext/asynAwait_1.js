@@ -8,3 +8,5 @@ function retornaValor() {
 
 //com then()
 retornaValor().then((valor) => console.log(valor));
+
+//com async await
