@@ -6,12 +6,12 @@ function retornaValor() {
   });
 }
 
-//com then()
+//exemplo com then()
 /*retornaValor(10)
   .then((valor) => console.log(valor))
   .catch((err) => console.log(`Ocorreu um erro: ${err}`));*/
 
-//com async await
+//execplo com async await
 async function executar() {
   let valor = await retornaValor();
   console.log(`Valor e ${valor}`);
