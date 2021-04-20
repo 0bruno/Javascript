@@ -1,12 +1,15 @@
-function retornaValor() {
-  return new Promise((resolve) => {
+function retornaValor(valor) {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(10);
+      resolve(valor);
     }, 5000);
+    reject('Não foi passado nada');
   });
 }
 
 //com then()
-retornaValor().then((valor) => console.log(valor));
+retornaValor(10)
+  .then((valor) => console.log(valor))
+  .catch((err) => console.log(`Ocorreu um erro: ${err}`));
 
 //com async await
