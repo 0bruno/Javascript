@@ -8,8 +8,8 @@ function retornaValor(valor) {
 }
 
 //com then()
-retornaValor(10)
+/*retornaValor(10)
   .then((valor) => console.log(valor))
-  .catch((err) => console.log(`Ocorreu um erro: ${err}`));
+  .catch((err) => console.log(`Ocorreu um erro: ${err}`));*/
 
 //com async await
