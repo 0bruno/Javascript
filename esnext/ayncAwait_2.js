@@ -14,6 +14,7 @@ function geraNumerosEntre(min, max, numeroRepetido) {
   });
 }
 
+//gerando numeros
 geraNumerosEntre(1, 5, [1, 2, 4])
   .then(console.log)
   .catch((err) => console.log(err));
