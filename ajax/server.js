@@ -2,3 +2,5 @@
 const bodyParser = require('body-parser'); // deixa os ddos dentro do request pronto para ser manupulados dentro desse arquivo
 const express = require('express');
 const app = express();
+
+//definindo middlewares, funcoao executada quando determinada requisição chegar
