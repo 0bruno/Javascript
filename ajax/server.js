@@ -5,3 +5,5 @@ const app = express();
 
 //definindo middlewares, funcoao executada quando determinada requisição chegar
 app.use(express.static('.')); //provendo os arquivos etaticos a partir desse middlware
+app.use(bodyParser.urlencoded({ extended: true })); // se vier algum formato a partir de um submit de um form esse codigo le e os transforma em objeto
+app.use(bodyParser.json()); //se vier json na requisição este codigo o transforma em objeto
