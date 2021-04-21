@@ -4,3 +4,4 @@ const express = require('express');
 const app = express();
 
 //definindo middlewares, funcoao executada quando determinada requisição chegar
+app.use(express.static('.')); //provendo os arquivos etaticos a partir desse middlware
