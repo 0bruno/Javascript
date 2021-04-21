@@ -7,3 +7,6 @@ const app = express();
 app.use(express.static('.')); //provendo os arquivos etaticos a partir desse middlware
 app.use(express.urlencoded({ extended: true })); // se vier algum formato a partir de um submit de um form esse codigo le e os transforma em objeto
 app.use(express.json()); //se vier json na requisição este codigo o transforma em objeto
+
+app.get('/teste', (req, res) => res.send('Ok'));
+app.listen(3000, () => console.log('Excutando'));
